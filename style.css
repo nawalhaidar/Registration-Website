@@ -1,0 +1,167 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0px;
+}
+.head{
+    padding: 20px;
+    color:white;
+    width:100%;
+    height: 300px;
+    background-image: url(background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+#title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+    color: white;
+    /* background-color: rgba(1,1,1,0.5); */
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#display, #home{
+    position: absolute;
+    right: 5%;
+    top: 20px;
+}
+/* #display-button, #submit, #login, #home-button, #goBack{ */
+button,#submit, #login{    
+    background-color:#ffa500 ;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+    color: white;
+}
+/* #display-button:hover, #submit:hover, #login:hover, #home-button:hover, #goBack:hover{ */
+button:hover, #submit:hover, #login:hover{   
+    opacity: 0.9;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+body{
+    margin: 0px;
+    background-color: #a3a8b43a;
+    font-family: 'Roboto', sans-serif;
+}
+.main-body{
+    position: absolute;
+    top: 200px;
+    right: 25%;
+    left: 25%;
+}
+
+#about, #register, #loginBlock, #main-body, #submission{
+    background-color: white;
+    padding: 20px;
+    margin: 0px;
+    /* width: 400 px; */
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    color: navy;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+.form-element{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-bottom: 15px;
+}
+
+.form-element p, .motivation p{
+    margin-inline-end: 20px;
+    font-weight: 700;
+}
+
+.form-element input{
+    flex-grow: 1;
+}
+
+#radio2{
+    margin-left: 40px;
+}
+
+input[type="text"], .motivation textarea{
+    background-color: #a3a8b43a;
+    border-style:hidden;
+}
+
+textarea{
+    resize:horizontal;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-container, #goBackContainer{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#submit, #login, #goBack{
+    width:25%;
+}
+
+#submission p{
+    font-weight:700;
+}
+
+
+/* *********************************** 
+    Display Page
+ ************************************/
+
+#main-body{
+    right: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+}
+th{
+    background-color: #ffa500;
+    color: white;
+}
+td,th{
+    border-bottom: 1px solid #ffa500;
+    padding: 5px;
+}
+tr:hover{
+    background-color: #ffd588;
+}
+
+
+.manageData{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+select{
+    /* background-color:#ffd588; */
+    border-color: #ffd588;
+    font-family: inherit;
+    font-size: 0.85rem;
+}

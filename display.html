@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>TechCon 2023</title>
+</head>
+<body>
+    <div class="head">
+        <div id="title">
+            TechCon 2023 - Empowering the Future
+        </div>
+        <div id="home">
+            <button id="home-button">Home</button>
+        </div>
+    </div>
+    <div class="main-body" id="main-body">
+        <h3 class="subtitle">Registree Data</h3>
+        <div class="manageData">
+            <div id="search">
+                <form >
+                    <label>Search by:</label>
+                    <select name="searchBy" id="searchBy">
+                        <option value="fname">First Name</option>
+                        <option value="lname">Last Name</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="univ">University</option>
+                        <option value="maj">Major</option>
+                    </select>
+                    <input id="searchValue"type="text">
+                    <button id="searchButton">Search</button>
+                </form>
+            </div>
+            <div id='filter'>
+                <form >
+                    <label>Gender:</label>
+                    <select name="filterGenderOptions" id="filterGenderOptions">
+                        <option value="any">Any</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <label>Employed:</label>
+                    <select name="filterEmployedOptions" id="filterEmployedOptions">
+                        <option value="any">Any</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <button id='filterButton'>Filter</button>
+                </form>
+            </div>
+            <div id='sort'>
+                <form >
+                    <label>Sort:</label>
+                    <select name="sortBy" id="sortBy">
+                        <option value="fname">First Name</option>
+                        <option value="lname">Last Name</option>
+                        <option value="regDate">Registration Date</option>
+                        <option value="birthdate">Birth Date</option>
+
+                    </select>
+                    <select name="order" id="order">
+                        <option value="ascending">Ascending</option>
+                        <option value="descending">Descending</option>
+                    </select>
+                    <button id="'sortButton">Sort</button>
+                </form>
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Birthdate</th>
+                <th>University</th>
+                <th>Major</th>
+                <th>Employed</th>
+            </tr>            
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

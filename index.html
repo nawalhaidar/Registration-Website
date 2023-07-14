@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>TechCon 2023</title>
+</head>
+<body>
+    <div class="head">
+        <div id="title">
+            TechCon 2023 - Empowering the Future
+        </div>
+        <div id="display">
+            <button id="display-button">Display Registrees</button>
+        </div>
+    </div>
+    <div class="main-body">
+        <div id="about">
+            <h3 class="subtitle">About the Event</h3>
+            <p>
+                Join us for TechCon 2023, a technology conference aimed at 
+                empowering the future through innovation, collaboration, 
+                and knowledge sharing. This event brings together industry leaders, 
+                tech enthusiasts, and professionals from various domains to explore 
+                emerging technologies, discuss trends, and network with like-minded individuals. 
+                Whether you're a developer, designer, entrepreneur, or simply curious about the 
+                latest advancements in technology, TechCon 2023 is the place to be!
+            </p>
+        </div>
+        <form id="register">
+            <h3 class="subtitle">Register Now</h3>
+            <div class="form-element"id="ffname">
+                <p>First Name</p>
+                <input type="text" id="fname" name="fname" required>      
+            </div>
+            <div class="form-element" id="llname">
+                <p>Last Name</p>
+                <input type="text" id="lname" name="lname" required>      
+            </div>
+            <div class="form-element" id="eemail" >
+                <p>Email Address</p>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-element" id="pphone" >
+                <p>Phone Number</p>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-element" id="gender">
+                <p>Gender</p>
+                <label>
+                    <input type="radio" name="gender" value="male" >
+                    Male
+                  </label>
+                  <label id="radio2">
+                    <input type="radio" name="gender" value="female">
+                    Female
+                  </label>
+            </div>
+            <div class="form-element" id="bbirth" >
+                <p>Birth Date</p>
+                <input type="text" id="birthdate" name="birthdate">
+            </div>
+            <div id="education">
+                <div class="form-element" id="uni">
+                    <p>University</p>
+                    <input type="text" id="univ" name="univ">
+                </div>
+                <div class="form-element" id="major">
+                    <p>Major</p>
+                    <input type="text" id="maj" name="maj">
+                </div>
+            </div>
+            <div class="form-element"  id="experience">
+                <p>Are you currently employed?</p>
+                <label>
+                    <input type="radio" name="employed" value="Yes">
+                    Yes
+                  </label>
+                  
+                  <label id="radio2">
+                    <input type="radio" name="employed" value="No">
+                    No
+                  </label>
+
+            </div>
+            <div class="motivation" id="motivation">
+                <p>Please explain your motivation behind joining this conference.</p>
+                <textarea id="motive" name="motive" rows="5" cols="82">
+                </textarea>
+            </div>
+            <div class="submit-container">
+            <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
